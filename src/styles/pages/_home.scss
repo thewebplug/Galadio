@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  max-width: 959px;
+  padding: 0 20px;
+  display: flex;
+  gap: 48px;
+  margin: auto;
+  height: 50px;
+  margin-top: 20px;
+
+  &__links {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    color: rgba(10, 10, 13, 1);
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    & > :first-child {
+      background: linear-gradient(
+        90.42deg,
+        #4ab1f1 0.58%,
+        #566cec 37.22%,
+        #d749af 73.87%,
+        #ff7c51 112.26%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 405px;
+    display: flex;
+    height: 100%;
+    border-radius: 30px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 20px;
+
+    & > svg {
+      width: 40px;
+    }
+
+    & > input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+    }
+
+    &__button {
+      border: none;
+      background: none;
+      outline: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    &__mode {
+      margin-right: 14px;
+    }
+
+    &__join {
+      width: 115px;
+      height: 48px;
+      margin-right: 8px;
+      border-radius: 24px;
+      background: linear-gradient(73.19deg, #dc79ff 0%, #256bfa 95.06%);
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__login {
+      border: 1px solid rgba(77, 62, 255, 0.9);
+      width: 87px;
+      height: 50px;
+      border-radius: 24px;
+      outline: none;
+      background: none;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(77, 62, 255, 0.9);
+      margin-right: 28px;
+    }
+  }
+}
+
+.home {
+  &__hero {
+    width: 100%;
+    max-width: 1440px;
+    padding: 80px 140px 0 140px;
+    margin: auto;
+    margin-bottom: 100px;
+    // background: yellow;
+    &__title {
+      margin: auto;
+      margin-bottom: 2rem;
+      max-width: 25ch;
+      width: 100%;
+      font-family: "Bricolage Grotesque";
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+      span {
+        background: linear-gradient(
+          89.28deg,
+          #4ab1f1 55.67%,
+          #566cec 65.26%,
+          #d749af 73.18%,
+          #ff7c51 82.35%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &__subtitle {
+        width: 100%;
+      max-width: 105ch;
+      margin: auto;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      line-height: 20px;
+      margin-bottom: 2.4rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: auto;
+    }
+  }
+}
