@@ -84,13 +84,7 @@
       }
 
       &__button {
-        width: 320px;
-        height: 48px;
-        border-radius: 24px;
-        background: linear-gradient(73.19deg, #dc79ff 0%, #256bfa 95.06%);
-        border: none;
-        outline: none;
-        font-size: 18px;
+        @extend %primary-button;
         margin-bottom: 12px;
       }
 
@@ -103,6 +97,39 @@
         span {
           color: rgba(19, 76, 157, 1);
           font-weight: 600;
+        }
+      }
+
+      &__continue {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: rgba(19, 76, 157, 1);
+        font-weight: 700;
+margin-top: 32px;
+      }
+
+      &__option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 32px;
+
+        & > button {
+          width: 100%;
+          font-size: 14px;
+          font-weight: 500;
+height: 48px;
+border: 1px solid rgba(74, 87, 111, 0.7);
+border-radius: 30px;
+background: none;
+outline: none;
+gap: 6px;
+color: rgba(55, 73, 87, 0.7);
+display: flex;
+align-items: center;
+justify-content: center;
         }
       }
     }
